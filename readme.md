@@ -2,6 +2,8 @@
 
 A Node.js script for automating spins on the Kaidro platform using the Ronin network.
 
+![spin-terminal](https://i.ibb.co/F0k426y/bg.png)
+
 ## Features
 
 - Interact with Kaidro's smart contract
