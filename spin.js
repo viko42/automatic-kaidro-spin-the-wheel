@@ -60,6 +60,9 @@ async function sendRoninTransaction(wallet) {
     return true;
   } catch (error) {
     console.error("Error sending transaction:", error);
+    if (error.reason === "ERC20: burn amount exceeds balance") {
+      throw new Error("Burn amount exceeds balance");
+    }
     return false;
   }
 }
