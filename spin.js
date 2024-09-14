@@ -32,7 +32,7 @@ const generateHexStringFromNumber = (number) => {
 const getPaymentCount = async (address) => {
   try {
     const count = await contract.paymentCount(address);
-    return count;
+    return count + BigInt(1);
   } catch (error) {
     console.error("Error getting payment count:", error);
     return null;
